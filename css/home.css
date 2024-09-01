@@ -1,0 +1,67 @@
+/* home */
+
+.home{
+    min-height: 100vh;
+    padding: 23px 10%;
+    display: flex;
+    align-items: center;
+    
+}
+
+#home{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.home-content{
+    margin-left: 60px;
+    color: white;
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    
+}
+
+span{
+    color: #b22222;
+
+}
+.home-img{
+    border-radius: 50%;
+
+}
+
+.home-img img{
+    position: relative;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 25px red;
+}
+
+.home-img img:hover{
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 25px #b22222);
+}
+
+.home-content p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ccccccad;
+   
+}
+
+.redes-socias-icon a{
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    
+}

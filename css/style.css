@@ -1,0 +1,115 @@
+/* navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background-color: #111111;
+    min-height: 100vh;
+   
+}
+
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #000000ea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-top: 0.1rem solid rgba(0,0,0,0,.1);
+}
+
+#navMativa{
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+
+    font-size: 32px;
+    color: #b22222;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#logoName {
+
+    position: relative;
+    font-size: 32px;
+    color: #b22222;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 40px;
+    cursor: default;
+    
+    
+}
+
+
+#logoName:hover::before{
+
+    background-color: transparent;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navbar a:hover{
+
+    color: #b22222;
+}
+
+.navbar a::before{
+
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #b22222;
+    transition: .3s;
+}
+
+
+.navbar a:hover::before{
+
+    width: 100%;
+
+}
+
+
+#navM{
+
+    display: none;
+}
+
+@media only screen and (max-width:1000px)  {
+
+    #navM{
+
+        display: flex;
+    }
+
+    .header{
+        display: none;
+    }
+    
+}
